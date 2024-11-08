@@ -12,6 +12,8 @@ class Button extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
               child: Reusable(
@@ -32,9 +34,28 @@ class Button extends StatelessWidget {
             //   ),
             // ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
               children: [
                 Container(
                   child: Reusableinput(hintText: 'hello', controller: TextEditingController()),
+                ),
+                  SizedBox(
+                    width: 2,
+                    height: 10,
+                  ),
+                Container(
+                  width: 250,
+                  height: 50,
+                  child:const  TextField(
+                    decoration: InputDecoration(
+                      hintText: 'please enter your name',
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(2))),
+                      hoverColor: Colors.amber
+        
+                    ),
+                    
+                  ),
                 )
               ],
             ),

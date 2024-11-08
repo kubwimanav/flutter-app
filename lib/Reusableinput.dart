@@ -24,7 +24,10 @@ class Reusableinput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return Container(
+      width: 250,
+      height: 50,
+      child: TextField(
       controller: controller,
       obscureText: obscureText,
       keyboardType: keyboardType,
@@ -38,10 +41,11 @@ class Reusableinput extends StatelessWidget {
                 onPressed: onSuffixIconPressed,
               )
             : null,
+        
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),
         ),
       ),
-    );
+    ));
   }
 }
