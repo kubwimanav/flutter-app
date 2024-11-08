@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Reusablebutton.dart';
 import 'package:flutter_application_1/Reusablestyle.dart';
+import 'package:flutter_application_1/Textbutton.dart';
 
 class Button extends StatelessWidget {
   const Button({super.key});
@@ -15,25 +17,10 @@ class Button extends StatelessWidget {
             'hello this eleveted button',
           )),
           Container(
-              child: ElevatedButton(
-            onPressed: () {},
-            child: Text('Looks like a RaisedButton'),
-            style: const ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(Colors.green),
-                padding: MaterialStatePropertyAll(EdgeInsets.all(10))),
-          )),
+            child: Reusablebutton(onpressed: (){}, child:const Textbutton('Looks like a RaisedButton') ),
+          ),
           Container(
-            child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  'hello',
-                  style: TextStyle(fontSize: 10, color: Colors.black),
-                ),
-                style: TextButton.styleFrom(
-                    primary: Colors.green,
-                    shape: const BeveledRectangleBorder(
-                        borderRadius: BorderRadius.zero),
-                    backgroundColor: Colors.green)),
+          child: Reusablebutton(onpressed: (){}, child:const Textbutton('he looks amazing')),
           )
         ],
       ),
