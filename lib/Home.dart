@@ -70,7 +70,356 @@ class Home extends StatelessWidget {
           )
           ),
           
+        ),
+
+       const SizedBox(
+        height: 20,
+       ),
+        
+        Container(
+          child: Row(
+            children: [
+              Container(
+                child: Column(
+                  children: [
+                    Container(
+                      child:ClipRRect (
+                      borderRadius: BorderRadius.circular(20.0),
+                      child: Image.asset('assets/pexels-v.jpg',
+                       width: 170,
+                       height: 100,
+                       ),
+                      ),
+                    ),
+                    Container(
+                      child:const Text('ArtBaby #001',
+                      style: TextStyle(
+                        fontSize: 12,
+                        decoration: TextDecoration.none,
+                        color: Colors.white
+                      ),
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              'Stop Bid',
+                              style: TextStyle(
+                                fontSize: 11,
+                                decoration: TextDecoration.none,
+                                color: Color.fromARGB(255, 216, 213, 213)
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 60,),
+                          Container(
+                            child:const  Text('Ends',
+                            style: TextStyle(
+                              fontSize: 10,
+                              decoration: TextDecoration.none,
+                              color: Color.fromARGB(255, 216, 213, 213)
+                            ),),
+                          )
+                        ],
+                      ),
+                    ),
+
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              '0.6310',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 60,
+                          ),
+                          Container(
+                            child: const Text(
+                              '8 hours',
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+
+              
+           
+
+
+              Container(
+                child: Column(
+                  children: [
+                    Container(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                          'assets/pexels-v.jpg',
+                          width: 170,
+                          height: 100,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      child: const Text(
+                        'ArtBaby #001',
+                        style: TextStyle(
+                            fontSize: 12,
+                            decoration: TextDecoration.none,
+                            color: Colors.white),
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              'Stop Bid',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  decoration: TextDecoration.none,
+                                  color: Color.fromARGB(255, 216, 213, 213)),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 40,
+                          ),
+                          Container(
+                            child: const Text(
+                              'Ends',
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  decoration: TextDecoration.none,
+                                  color: Color.fromARGB(255, 216, 213, 213)),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              '0.6310',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 40,
+                          ),
+                          Container(
+                            child: const Text(
+                              '8 hours',
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              
+            ],
+          ),
+        ),
+
+
+
+ const SizedBox(
+        height: 20,
+       ),
+
+         Container(
+          child: Row(
+            children: [
+              Container(
+                child: Column(
+                  children: [
+                    Container(
+                      child:ClipRRect (
+                      borderRadius: BorderRadius.circular(20.0),
+                      child: Image.asset('assets/pexels-v.jpg',
+                       width: 170,
+                       height: 100,
+                       ),
+                      ),
+                    ),
+                    Container(
+                      child:const Text('ArtBaby #001',
+                      style: TextStyle(
+                        fontSize: 12,
+                        decoration: TextDecoration.none,
+                        color: Colors.white
+                      ),
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              'Stop Bid',
+                              style: TextStyle(
+                                fontSize: 11,
+                                decoration: TextDecoration.none,
+                                color: Color.fromARGB(255, 216, 213, 213)
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 60,),
+                          Container(
+                            child:const  Text('Ends',
+                            style: TextStyle(
+                              fontSize: 10,
+                              decoration: TextDecoration.none,
+                              color: Color.fromARGB(255, 216, 213, 213)
+                            ),),
+                          )
+                        ],
+                      ),
+                    ),
+
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              '0.6310',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 60,
+                          ),
+                          Container(
+                            child: const Text(
+                              '8 hours',
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+
+              
+
+
+
+              Container(
+                child: Column(
+                  children: [
+                    Container(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                          'assets/pexels-v.jpg',
+                          width: 170,
+                          height: 100,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      child: const Text(
+                        'ArtBaby #001',
+                        style: TextStyle(
+                            fontSize: 12,
+                            decoration: TextDecoration.none,
+                            color: Colors.white),
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              'Stop Bid',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  decoration: TextDecoration.none,
+                                  color: Color.fromARGB(255, 216, 213, 213)),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 40,
+                          ),
+                          Container(
+                            child: const Text(
+                              'Ends',
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  decoration: TextDecoration.none,
+                                  color: Color.fromARGB(255, 216, 213, 213)),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: const Text(
+                              '0.6310',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 40,
+                          ),
+                          Container(
+                            child: const Text(
+                              '8 hours',
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  decoration: TextDecoration.none,
+                                  color: Colors.white),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              
+            ],
+          ),
         )
+      
       ],
     );
   }
