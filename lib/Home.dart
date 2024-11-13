@@ -7,6 +7,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
        const Padding( padding: EdgeInsets.only(top:30), ),
         Container(
@@ -14,11 +15,13 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                child: const Icon(Icons.add, color: Colors.red,
+                child: const Icon(Icons.arrow_back, 
+                color: Colors.white,
                 ),
               ),
               Container(
-                child: const Icon(Icons.accessibility, color: Colors.amber,),
+                child: const Icon(Icons.three_p,
+                 color: Colors.white,),
               )
             ],
           ),
@@ -78,6 +81,7 @@ class Home extends StatelessWidget {
         
         Container(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 child: Column(
@@ -85,8 +89,8 @@ class Home extends StatelessWidget {
                     Container(
                       child:ClipRRect (
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset('assets/pexels-v.jpg',
-                       width: 170,
+                      child: Image.asset('assets/pexels-vincent.jpg',
+                       width: 190,
                        height: 100,
                        ),
                       ),
@@ -168,8 +172,8 @@ class Home extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
                         child: Image.asset(
-                          'assets/pexels-v.jpg',
-                          width: 170,
+                          'assets/pexels-by.jpg',
+                          width: 200,
                           height: 100,
                         ),
                       ),
@@ -246,13 +250,9 @@ class Home extends StatelessWidget {
         ),
 
 
-
- const SizedBox(
-        height: 20,
-       ),
-
          Container(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 child: Column(
@@ -260,8 +260,8 @@ class Home extends StatelessWidget {
                     Container(
                       child:ClipRRect (
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset('assets/pexels-v.jpg',
-                       width: 170,
+                      child: Image.asset('assets/pexels-christina.jpg',
+                       width: 200,
                        height: 100,
                        ),
                       ),
@@ -343,7 +343,7 @@ class Home extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
                         child: Image.asset(
-                          'assets/pexels-v.jpg',
+                          'assets/pexels-mas.jpg',
                           width: 170,
                           height: 100,
                         ),
@@ -418,9 +418,50 @@ class Home extends StatelessWidget {
               
             ],
           ),
+        ),
+        Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                child:const Icon(
+                Icons.home_repair_service,
+                color:Colors.white ,
+                size: 30,),
+              
+              ),
+              // const SizedBox(
+              //   width: 40,
+              // ),
+               Container(
+                child: const Icon(
+                  Icons.menu,
+                  color: Colors.white,
+                  size: 30,
+                ),
+              ),
+
+              // const SizedBox(width: 40,),
+               Container(
+                child: const Icon(
+                  Icons.settings_accessibility,
+                  color: Colors.white,
+                  size: 30,
+                ),
+              ),
+                  Container(
+                child: const Icon(
+                  Icons.settings_applications,
+                  color: Colors.white,
+                  size: 30,
+                ),
+              )
+            ],
+          ),
         )
       
       ],
+      
     );
   }
 }
