@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Reusableinput extends StatelessWidget {
   final String hintText;
+  final String labelText;
   final TextEditingController controller;
   final bool obscureText;
   final TextInputType keyboardType;
@@ -13,6 +14,7 @@ class Reusableinput extends StatelessWidget {
   const Reusableinput({
     Key? key,
     required this.hintText,
+    required this.labelText,
     required this.controller,
     this.obscureText = false,
     this.keyboardType = TextInputType.text,
@@ -28,11 +30,13 @@ class Reusableinput extends StatelessWidget {
       width: 250,
       height: 50,
       child: TextField(
+      
       controller: controller,
       obscureText: obscureText,
       keyboardType: keyboardType,
       onChanged: onChanged,
       decoration: InputDecoration(
+        labelText:labelText ,
         hintText: hintText,
         prefixIcon: prefixIcon != null ? Icon(prefixIcon) : null,
         suffixIcon: suffixIcon != null

@@ -19,15 +19,21 @@ class Profile extends StatelessWidget {
             Container(
            child: Column(
             children: [
-              Reusableinput(hintText: 'Enter Your Name', 
+              Reusableinput(
+                labelText: 'Full Name',
+                hintText: 'Enter Your Name', 
               controller: TextEditingController(),),
               const SizedBox(
                     height: 10,
                   ),
-              Reusableinput(hintText: 'Enter Your Email', 
+              Reusableinput(
+              labelText: 'Email',
+              hintText: 'Enter Your Email', 
               controller:TextEditingController() ),
               const SizedBox(height:10,),
-              Reusableinput(hintText: 'Enter Your Phone Number', 
+              Reusableinput(
+              labelText: 'Phone Number',
+              hintText: 'Enter Your Phone Number', 
               controller:TextEditingController()),
               const SizedBox(
                     height: 10,
