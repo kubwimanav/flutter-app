@@ -10,8 +10,9 @@ class Reusablebutton extends StatelessWidget {
   final Widget child;
   @override
   Widget build(BuildContext context) {
-    return TextButton(
+    return ElevatedButton(
       style: TextButton.styleFrom(
+         
         backgroundColor: Colors.green,
         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5)))
       ),

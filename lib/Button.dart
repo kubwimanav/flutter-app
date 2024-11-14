@@ -37,9 +37,12 @@ class Button extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
               children: [
-                // Container(
-                //   child: Reusableinput(hintText: 'hello', controller: TextEditingController()),
-                // ),
+                Container(
+                  child: Reusableinput(
+                    labelText: 'enter your blessing',
+                    hintText: 'hello', 
+                    controller: TextEditingController()),
+                ),
                   SizedBox(
                     width: 2,
                     height: 10,

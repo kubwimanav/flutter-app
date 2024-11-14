@@ -27,7 +27,7 @@ class Reusableinput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 250,
+      width: 340,
       height: 50,
       child: TextField(
       

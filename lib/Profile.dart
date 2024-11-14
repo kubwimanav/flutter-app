@@ -16,6 +16,7 @@ class Profile extends StatelessWidget {
             Container(
               child: Image.asset('assets/pexels-sing.jpg'),
             ),
+            const SizedBox(height: 20,),
             Container(
            child: Column(
             children: [
@@ -38,7 +39,7 @@ class Profile extends StatelessWidget {
               const SizedBox(
                     height: 10,
                   ),
-                  Reusablebutton(onpressed: (){}, 
+                  Reusablebutton(onpressed: (){},
                   child:const Text('Submit',style: TextStyle(color: Colors.white),))
             ],
            ),
