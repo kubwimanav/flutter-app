@@ -408,11 +408,16 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                child: const Icon(
-                  Icons.home_repair_service,
-                  color: Colors.white,
-                  size: 30,
-                ),
+                child: IconButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/create');
+                    },
+                    icon: const Icon(Icons.home_repair_service)),
+                // child: const IconButton( o
+                //   Icons.home_repair_service,
+                //   color: Colors.white,
+                //   size: 30,
+                // ),
               ),
               // const SizedBox(
               //   width: 40,
